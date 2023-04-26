@@ -1,5 +1,10 @@
 --require'navigator'.setup()
 
+--require "lsp_signature".setup({
+--    hint_prefix = "⟫ "
+--})
+
+
 require 'navigator'.setup({
 
     transparency = 0,
@@ -62,7 +67,7 @@ require 'navigator'.setup({
         code_lens_action = { delay = 5000, enable = true, sign = true, sign_priority = 30, virtual_text = false },
         format_on_save = false,
     },
-    lsp_signature_help = false,
+    lsp_signature_help = true,
 
     keymaps = {
         { key = 'gr', func = require('navigator.reference').async_ref, desc = 'async_ref' },

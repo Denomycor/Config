@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- Move things while highlighted
 vim.keymap.set("v", "<A-Up>", ":m '<-2<CR>gv=gv")
@@ -50,6 +49,7 @@ vim.keymap.set("v", "F", 'y/\\V<C-r>"')
 
 -- Split Window
 vim.keymap.set("n", "<leader>vv", "<C-w>v")
+vim.keymap.set("n", "<leader>vh", "<C-w>v")
 
 -- Switch Window
 vim.keymap.set("n", "<leader>w", "<C-w>w")
