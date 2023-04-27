@@ -24,6 +24,9 @@ lsp.configure('lua_ls', {
 })
 
 
+require'lspconfig'.gdscript.setup{capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())}
+
+
 local cmp = require('cmp')
 local cmp_mappings = lsp.defaults.cmp_mappings({
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
@@ -35,6 +38,11 @@ cmp_mappings['<S-Tab>'] = nil
 
 lsp.setup_nvim_cmp({
     mapping = cmp_mappings,
+
+    sources = {
+        { name = 'nvim_lsp' },
+        { name = 'buffer' },
+    }
 })
 
 cmp.setup({
