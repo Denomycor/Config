@@ -1,2 +1,2 @@
-require("afonso")
+require('afonso')
 

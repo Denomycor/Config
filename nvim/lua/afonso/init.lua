@@ -1,3 +1,3 @@
-require("afonso.remap")
-require("afonso.set")
+require('afonso.remap')
+require('afonso.set')
 

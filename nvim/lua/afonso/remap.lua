@@ -57,9 +57,3 @@ vim.keymap.set("n", "<leader>w", "<C-w>w")
 -- Quick Save
 vim.keymap.set("n", "<C-s>", "<cmd>w<CR>")
 
--- Source file
---vim.keymap.set("n", "<leader><leader>", function()
---    vim.cmd("so")
---end)
-
-

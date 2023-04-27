@@ -8,6 +8,7 @@ vim.lsp.set_log_level("debug")
 lsp.ensure_installed({
     'rust_analyzer',
     'lua_ls',
+    'clangd',
 })
 
 
