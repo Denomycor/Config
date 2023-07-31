@@ -1,0 +1,5 @@
+-Wall
+-I
+./include
+-xc++
+--std=c++20
